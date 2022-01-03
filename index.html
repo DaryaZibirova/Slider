@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title>Слайдер</title>
+    </head>
+
+    <!--Section №2 (from project "Landing page")-->
+    <body>
+        <div class="section2">
+            <div class="section2-leftside">
+                <h2 class="section2-leftside__h2">
+                    Completed<br>projects <div class="line"></div>
+                </h2>
+                <p class="section2-leftside__block1">
+                    Only a small part of the work performed by our company is presented
+                    on the site. For 14 years on in the construction
+                    market we have made happy more than 1000 families
+                </p>
+                <div class="section2-leftside__block2">
+                    <div class="section2-leftside__block2_part1">
+                        <div>
+                            <span class="info-title">City:</span> <br>
+                            <span class="info-text txt1">
+                            Rostov-on-Don <br>
+                            LCD admiral
+                            </span>
+                        </div>
+                        <div>
+                            <span class="info-title">Repair time:</span> <br>
+                            <span class="info-text txt2">3.5 months</span>
+                        </div>
+                    </div>
+                    <div class="section2-leftside__block2_part2">
+                        <div>
+                            <span class="info-title">Apartment area:</span> <br>
+                            <span class="info-text txt3">81 m2</span>
+                        </div>
+                        <div>
+                            <span class="info-title">Repair Cost:</span> <br>
+                            <span class="info-text txt4">Upon request</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section2-leftside__block3">
+                    <button onclick="btnLeft()"><img src="images/arrow-left.png" alt="Нет фото"></button>
+                    <div class="circles">
+                        <button class="circle1" onclick="slide1()"></button>
+                        <button class="circle2" onclick="slide2()"></button>
+                        <button class="circle3" onclick="slide3()"></button>
+                    </div>
+                    <button onclick="btnRight()"><img src="images/arrow-right.png" alt="Нет фото"></button>
+                </div>
+            </div>
+
+            <div class="section2-rightside">
+                <div class="links">
+                    <button class="admiral" onclick="slide1()">Rostov-on-Don, Admiral</button>
+                    <button class="sochi" onclick="slide2()">Sochi Thieves</button>
+                    <button class="patriotic" onclick="slide3()">Rostov-on-Don, Patriotic</button>
+                </div>
+                <div id="images">
+                    <img src="images/image1.png" alt="Нет фото">
+                    <img src="images/image2.png" alt="Нет фото">
+                    <img src="images/image3.png" alt="Нет фото">
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+
+</html>
